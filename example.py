@@ -6,3 +6,7 @@ if example_list[0]==1:
 else:
     print("First element not equal 1")
     print(example_list[0])
+
+
+
+sua cho vui 
