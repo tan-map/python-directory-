@@ -32,23 +32,35 @@
 
 
 # --------quick sort----------
-def partition(arr, gt_dau, gt_cuoi):
-	pt_chon = arr[gt_cuoi]
-	small_i = gt_dau - 1
-	for i in range(gt_dau, gt_cuoi):
-		if arr[i] <= pt_chon:
-			small_i += 1
-			arr[small_i], arr[i] = arr[i], arr[small_i]
-	small_i += 1
-	arr[small_i], arr[gt_cuoi] = arr[gt_cuoi], arr[small_i]
-	return small_i
+# def partition(arr, gt_dau, gt_cuoi):
+# 	pt_chon = arr[gt_cuoi]
+# 	small_i = gt_dau - 1
+# 	for i in range(gt_dau, gt_cuoi):
+# 		if arr[i] <= pt_chon:
+# 			small_i += 1
+# 			arr[small_i], arr[i] = arr[i], arr[small_i]
+# 	small_i += 1
+# 	arr[small_i], arr[gt_cuoi] = arr[gt_cuoi], arr[small_i]
+# 	return small_i
 
-def quicksort(arr, gt_dau, gt_cuoi):
-	if gt_dau < gt_cuoi:
-		pt_chon = partition(arr, gt_dau, gt_cuoi)
-		quicksort(arr, gt_dau, pt_chon - 1)
-		quicksort(arr, pt_chon + 1, gt_cuoi)
-input_arr=[1,5,6,7,12,34,14,66,33,10,11,99,19]
-print(format(input_arr))
-print(quicksort(input_arr,0,len(input_arr)-1))
-print(input_arr)
+# def quicksort(arr, gt_dau, gt_cuoi):
+# 	if gt_dau < gt_cuoi:
+# 		pt_chon = partition(arr, gt_dau, gt_cuoi)
+# 		quicksort(arr, gt_dau, pt_chon - 1)
+# 		quicksort(arr, pt_chon + 1, gt_cuoi)
+# input_arr=[1,5,6,7,12,34,14,66,33,10,11,99,19]
+# print(format(input_arr))
+# print(quicksort(input_arr,0,len(input_arr)-1))
+# print(input_arr)
+
+
+# -------insertion sort ---------
+# def insertion_soft(list):
+# 	for i in range(1,len(list)):
+# 		j = i
+# 		while(j!= 0 and list[j] < list[j-1]):
+# 			list[j-1],list[j] = list[j],list[j-1]
+# 			j-= 1
+# arr=[1,5,43,67,99,545,33,4,3,8,45,34,66,323,666]
+# print(insertion_soft(arr))
+# print(arr)
