@@ -13,8 +13,6 @@ class Queue:
 
    def size(self):
        return len(self.items)
-
-# thêm phần tử vào Queue
 s = Queue()
 s.enqueue(3)
 s.enqueue(2)
