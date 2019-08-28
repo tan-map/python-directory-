@@ -10,3 +10,24 @@ else:
 
 
 sua cho vui 
+
+
+
+import time
+start = time.time()
+
+def functSum (a: int,b: int,c: int)->int:
+    sum=0
+    x=0
+    while x <= c:
+        if a<b:
+            sum=sum + a + b
+        elif a>b:
+            sum = sum + (a - b)
+        if sum > 100:
+            break
+        x = x +1
+    return sum
+
+if __name__ == '__main__':
+	print (functSum(10,20,70))
