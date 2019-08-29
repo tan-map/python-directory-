@@ -1,10 +1,10 @@
-# def search(arr, x): 
-  
-#     for i in range(len(arr)): 
-  
-#         if arr[i] == x: 
-#             return i 
-  
+# def search(arr, x):
+
+#     for i in range(len(arr)):
+
+#         if arr[i] == x:
+#             return i
+
 #     return -1
 # arr = [10, 20, 80, 30, 60, 50, 110, 100, 130, 170]
 # x= 110
@@ -64,3 +64,15 @@
 # arr=[1,5,43,67,99,545,33,4,3,8,45,34,66,323,666]
 # print(insertion_soft(arr))
 # print(arr)
+# selection sort ( lay phan tu dau roi so sanh cac pt cong lai, nho nhat thi dua ve vi tri 0 cua mang)
+def selection_sort(list):
+	for i i n range(0, len(list) - 1):
+		minIndex = i
+		for j in range(i+1, len(list)):
+			if list[j] < list[minIndex]:
+				minIndex = j
+		if minIndex != i:
+			list[i] , list[minIndex] = list[minIndex] , list[i]
+ arr=[1,5,43,67,99,545,33,4,3,8,45,34,66,323,666]
+ print(selection_sort(arr))
+ print(arr)
